@@ -8,16 +8,17 @@ import ruolan.com.livestreaming.http.data.UserInfo;
 import ruolan.com.livestreaming.http.response.Response;
 
 /**
- * 手机登录请求
+ * 普通注册请求
  */
 
-public class PhoneLoginRequest extends IRequest {
+public class RegisterRequest extends IRequest {
 
-    public PhoneLoginRequest(int requestId,String userName,String password) {
+    public RegisterRequest(int requestId, String userName, String password) {
         mRequestId = requestId;
-        mParams.put("action", "phoneLogin");
-        mParams.put("mobile", userName);
-        mParams.put("verifyCode", password);
+        mParams.put("action", "register");
+        mParams.put("userName", userName);
+        mParams.put("password", password);
+        mParams.put("rePassword", password);
     }
 
     @Override
@@ -27,6 +28,7 @@ public class PhoneLoginRequest extends IRequest {
 
     @Override
     public Type getParserType() {
-        return new TypeToken<Response<UserInfo>>(){}.getType();
+        return new TypeToken<Response<UserInfo>>() {
+        }.getType();
     }
 }

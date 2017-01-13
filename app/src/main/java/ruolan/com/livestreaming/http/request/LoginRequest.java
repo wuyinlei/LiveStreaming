@@ -8,7 +8,7 @@ import ruolan.com.livestreaming.http.data.UserInfo;
 import ruolan.com.livestreaming.http.response.Response;
 
 /**
- * Created by wuyinlei on 2017/1/11.
+ * 普通用户登录请求
  */
 
 public class LoginRequest extends IRequest {

@@ -30,6 +30,7 @@ public class LoginActivity extends BaseActivity implements ILoginPresenter.Login
     @Override
     protected void setListener() {
         mBtnLogin.setOnClickListener(this);
+        mBtnRegister.setOnClickListener(this);
     }
 
     @Override
@@ -84,9 +85,10 @@ public class LoginActivity extends BaseActivity implements ILoginPresenter.Login
     }
 
     @Override
-    public void verifyCode(String code) {
+    public void verifyCodeError(String code) {
 
     }
+
 
     @Override
     public void phoneError(String code) {
@@ -125,6 +127,10 @@ public class LoginActivity extends BaseActivity implements ILoginPresenter.Login
                 String phone = mEtLogin.getText().toString().trim();
                 String password = mEtPassword.getText().toString().trim();
                 mLoginPresenter.phoneLogin(phone,password);
+                break;
+
+            case R.id.btn_register:
+                startActivity(new Intent(LoginActivity.this,RegisterActivity.class));
                 break;
 
         }

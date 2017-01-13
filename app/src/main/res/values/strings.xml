@@ -9,15 +9,15 @@
 
     <!--loginActivity -->
     <string name="activity_login_login">登录</string>
-    <string name="activity_login_phone_login">手机号登录</string>
-    <string name="activity_login_normal_login">用户名登录</string>
+    <string name="btn_phone_login">手机号登录</string>
+    <string name="login_normal_login">用户名登录</string>
     <string name="activity_login_register">注册新用户</string>
     <string name="activity_login_guest_login">游客模式</string>
-    <string name="activity_login_username">用户名</string>
+    <string name="login_username">用户名</string>
     <string name="activity_login_verify_code">获取验证码</string>
-    <string name="activity_login_verify_code_edit">验证码</string>
-    <string name="activity_login_phone_num">手机号</string>
-    <string name="activity_login_password">密码</string>
+    <string name="login_verify_code_edit">验证码</string>
+    <string name="login_phone_num">手机号</string>
+    <string name="login_password">密码</string>
     <!--loginActivity -->
 
     <!--registerActivity -->
@@ -31,4 +31,9 @@
     <string name="activity_register_verify_code">验证码</string>
     <string name="activity_register_return">返回</string>
     <!--registerActivity -->
+
+
+    <string name="tip_force_offline">您的帐号已在其它地方登陆</string>
+    <!-- permission check-->
+    <string name="float_window_not_allow">悬浮窗权限未开启 请在应用-权限中打开悬浮窗权限</string>
 </resources>
