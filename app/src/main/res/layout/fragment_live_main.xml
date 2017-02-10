@@ -32,7 +32,7 @@
             android:padding="8dip"
             android:src="@drawable/message"/>
 
-        <ruolan.com.livestreaming.PagerSlidingTabStrip
+        <ruolan.com.livestreaming.widget.PagerSlidingTabStrip
             android:id="@+id/tab_strip"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"

@@ -52,8 +52,8 @@ import java.io.IOException;
 import java.lang.ref.WeakReference;
 import java.util.Properties;
 
-import ruolan.com.livestreaming.LoginActivity;
-import ruolan.com.livestreaming.MainActivity;
+import ruolan.com.livestreaming.activity.LoginActivity;
+import ruolan.com.livestreaming.activity.MainActivity;
 import ruolan.com.livestreaming.R;
 
 /**

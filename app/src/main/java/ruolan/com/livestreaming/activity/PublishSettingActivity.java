@@ -1,10 +1,9 @@
-package ruolan.com.livestreaming;
+package ruolan.com.livestreaming.activity;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 
+import ruolan.com.livestreaming.R;
 import ruolan.com.livestreaming.base.BaseActivity;
 
 public class PublishSettingActivity extends BaseActivity {

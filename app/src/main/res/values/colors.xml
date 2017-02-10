@@ -69,9 +69,9 @@
     <color name="dialog_btn_pressed_color">#efefef</color>
 
     <!--app主色调，背景色-->
-    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimary">#30e7d5</color>
     <!--背景色-->
-    <color name="colorBackground">#F5F5F5</color>
+    <color name="colorBackground">#30e7d5</color>
     <!--app主题色，应用于导航，按钮-->
     <color name="colorTheme">#80407A</color>
     <!--主题色激活态，如按钮高亮-->

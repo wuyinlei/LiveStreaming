@@ -1,8 +1,9 @@
 package ruolan.com.livestreaming.http.request;
 
-
 /**
- * 请求id
+ * @description: 请求ID
+ * @author: Andruby
+ * @time: 2016/11/2 18:07
  */
 public class RequestComm {
 
@@ -31,4 +32,8 @@ public class RequestComm {
     public static final int follow_list = 137;
 
     public static final int pupolar_user_list = 137;
+
+    public static final int live_list = 138;
+    public static final int live_list_more = 139;
+
 }

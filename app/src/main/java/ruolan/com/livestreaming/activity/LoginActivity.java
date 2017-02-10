@@ -1,4 +1,4 @@
-package ruolan.com.livestreaming;
+package ruolan.com.livestreaming.activity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,6 +10,7 @@ import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
+import ruolan.com.livestreaming.R;
 import ruolan.com.livestreaming.base.BaseActivity;
 import ruolan.com.livestreaming.presenter.LoginPresenter;
 import ruolan.com.livestreaming.presenter.ipresenter.ILoginPresenter;

@@ -1,15 +1,12 @@
-package ruolan.com.livestreaming;
+package ruolan.com.livestreaming.activity;
 
 import android.animation.LayoutTransition;
 import android.content.Context;
 import android.content.Intent;
 import android.support.design.widget.TextInputLayout;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.view.inputmethod.EditorInfo;
-import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
@@ -25,6 +22,7 @@ import com.bumptech.glide.request.target.ViewTarget;
 
 import java.lang.ref.WeakReference;
 
+import ruolan.com.livestreaming.R;
 import ruolan.com.livestreaming.base.BaseActivity;
 import ruolan.com.livestreaming.presenter.RegisterPresenter;
 import ruolan.com.livestreaming.presenter.ipresenter.IRegisterPresenter;

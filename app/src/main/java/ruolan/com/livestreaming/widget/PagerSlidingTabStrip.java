@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package ruolan.com.livestreaming;
+package ruolan.com.livestreaming.widget;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -43,6 +43,8 @@ import android.widget.TextView;
 
 
 import java.util.Locale;
+
+import ruolan.com.livestreaming.R;
 
 
 public class PagerSlidingTabStrip extends HorizontalScrollView {
