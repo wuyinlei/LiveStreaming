@@ -3,9 +3,6 @@ package ruolan.com.livestreaming.presenter.ipresenter;
 import ruolan.com.livestreaming.base.BasePresenter;
 import ruolan.com.livestreaming.base.BaseView;
 
-/**
- * Created by wuyinlei on 2017/1/13.
- */
 
 public abstract class IRegisterPresenter implements BasePresenter{
 

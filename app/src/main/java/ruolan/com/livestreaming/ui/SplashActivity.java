@@ -42,7 +42,7 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
                 //LoginActivity.invoke(SplashActivity.this);
-                startActivity(new Intent(SplashActivity.this,LoginActivity.class));
+                startActivity(new Intent(SplashActivity.this,MainActivity.class));
                 finish();
             }
         },2000);
@@ -51,7 +51,7 @@ public class SplashActivity extends AppCompatActivity {
         mBtStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(SplashActivity.this,LoginActivity.class));
+                startActivity(new Intent(SplashActivity.this,MainActivity.class));
                 finish();
             }
         });
