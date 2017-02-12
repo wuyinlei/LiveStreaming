@@ -17,16 +17,21 @@ public class UserInfo extends IDontObfuscate {
     public String sigId;
     public String sdkAppId;
     public String sdkAccountType;
-    public String sex;
+    public int sex;
 
     public UserInfo() {
     }
 
-    public UserInfo(String userId, String nickname, String headPic, String sex) {
+    public UserInfo(String userId, String nickname, String headPic, int sex) {
         this.userId = userId;
         this.nickname = nickname;
         this.headPic = headPic;
         this.sex = sex;
+    }
+
+
+    public static void saveCache(Context context ,UserInfo info){
+        saveCache(context,info.userId,info.nickname,info.headPic,info.sigId);
     }
 
     public static void saveCache(Context context, String userId, String nickname, String headPic, String sigId) {

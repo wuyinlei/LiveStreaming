@@ -36,7 +36,7 @@ public class SplashActivity extends AppCompatActivity {
         mHandler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                //LoginActivity.invoke(SplashActivity.this);
+//                LoginActivity.invoke(SplashActivity.this);
                 startActivity(new Intent(SplashActivity.this,MainActivity.class));
                 finish();
             }
@@ -46,7 +46,7 @@ public class SplashActivity extends AppCompatActivity {
         mBtStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(SplashActivity.this,MainActivity.class));
+                //startActivity(new Intent(SplashActivity.this,MainActivity.class));
                 finish();
             }
         });

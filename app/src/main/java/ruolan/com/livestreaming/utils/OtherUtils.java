@@ -45,6 +45,7 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.animation.GlideAnimation;
 import com.bumptech.glide.request.target.SimpleTarget;
 import com.bumptech.glide.request.target.Target;
+import com.tencent.TIMFriendGenderType;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -52,9 +53,10 @@ import java.io.IOException;
 import java.lang.ref.WeakReference;
 import java.util.Properties;
 
+import ruolan.com.livestreaming.R;
 import ruolan.com.livestreaming.activity.LoginActivity;
 import ruolan.com.livestreaming.activity.MainActivity;
-import ruolan.com.livestreaming.R;
+import ruolan.com.livestreaming.logic.IMLogin;
 
 /**
  * @description: 其他工具类
@@ -324,12 +326,12 @@ public class OtherUtils {
 		}.start();
 	}
 
-//	public static String EnumGenderToString(TIMFriendGenderType genderType) {
-//		if (TIMFriendGenderType.Male == genderType) return "男";
-//		if (TIMFriendGenderType.Female == genderType) return "女";
-//
-//		return "";
-//	}
+	public static String EnumGenderToString(TIMFriendGenderType genderType) {
+		if (TIMFriendGenderType.Male == genderType) return "男";
+		if (TIMFriendGenderType.Female == genderType) return "女";
+
+		return "";
+	}
 
 	/**
 	 * 时间格式化
@@ -433,12 +435,6 @@ public class OtherUtils {
 		}
 	}
 
-	/**
-	 * 高斯模糊
-	 * @param resource  bitmap对象
-	 * @param context  上下文
-     * @return  模糊图片
-     */
 	private static Bitmap blurBitmap(Bitmap resource, Context context) {
 		Bitmap bitmap = Bitmap.createBitmap(resource.getWidth(), resource.getHeight(), Bitmap.Config.ARGB_8888);
 
@@ -582,7 +578,7 @@ public class OtherUtils {
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
 				dialog.dismiss();
-				//IMLogin.getInstance().logout();
+				IMLogin.getInstance().logout();
 				Intent intent = new Intent(context, LoginActivity.class);
 				intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
 				context.startActivity(intent);
@@ -592,7 +588,7 @@ public class OtherUtils {
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
 				dialog.dismiss();
-				//IMLogin.getInstance().reLogin();
+				IMLogin.getInstance().reLogin();
 				Intent intent = new Intent(context, MainActivity.class);
 				intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
 				context.startActivity(intent);

@@ -3,10 +3,14 @@ package ruolan.com.livestreaming.activity;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v4.app.FragmentTabHost;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TabHost;
+import android.widget.Toast;
+
+import com.tencent.rtmp.TXLivePusher;
 
 import ruolan.com.livestreaming.R;
 import ruolan.com.livestreaming.base.BaseActivity;
@@ -41,6 +45,8 @@ public class MainActivity extends BaseActivity {
             mTabSpec = mFragmentTabHost.newTabSpec(mTabNames[i]).setIndicator(getTabItemView(i));
             mFragmentTabHost.addTab(mTabSpec,mTabFangment[i],null);
         }
+
+
     }
 
     private View getTabItemView(int index) {
